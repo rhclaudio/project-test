@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Formulario de Contacto</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="../grid/css/bootstrap-theme.min.css" />
+<link rel="stylesheet" href="css/estilos1.css" />
+</head>
+
+<body>
+
+<div class="col-md-4 col-md-offset-4 text-center">
+<form action="enviar.php" method="post">
+<section class="jumbotron">
+    	<div class="container">
+        <img class="img-thumbnail pull-left" src="images/img1.jpg" alt=""/>
+        	<h1 class="titulo-blog">Formulario de Contacto</h1>
+            <p>Blog de diseño web</p>
+            <small>Profesor Mauricio Ferreira curso HTML5</small>
+        </div>
+        
+        <div>
+            <span id="basic-addon1"></span> <!--class="input-group-addon" -->
+            <input type="text" name="nombre" class="form-control" placeholder="Nombre" aria-describedby="basic-addon1" required>
+        </div>
+    <br>
+        <div> <!--"input-group">-->
+            <span  id="basic-addon2"></span> <!--class="input-group-addon" -->
+            <input type="email" name="correo" class="form-control" placeholder="Correo" aria-describedby="basic-addon2" required>
+        </div>
+    <br>
+        <div><!-- class="input-group">-->
+            <span id="basic-addon3"></span> <!--class="input-group-addon"--> 
+            <input type="number" name="telefono" class="form-control" placeholder="Teléfono" aria-describedby="basic-addon3" required>
+        </div>
+    <br>
+    <div>
+    	<textarea class="form-control" name="mensaje" rows="6" placeholder="Escriba aqui su mensaje"></textarea>  
+    </div>
+    
+    <div>
+      <input type="submit" value="Enviar" id="boton" class="btn btn-primary pull-left col-md-6 pull-left"></div>
+       <input type="reset" value="Restablecer" id="boton" class="btn btn-success pull-right col-md-6">
+    </div>
+    </section>
+    </form>
+</div>
+
+
+<script src="../tipografia/js/jquery.js"></script>
+<script src="../tipografia/js/bootstrap.min.js"></script>
+</body>
+</html>
